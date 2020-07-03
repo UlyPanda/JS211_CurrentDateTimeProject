@@ -10,42 +10,86 @@ console.log(new Date)
 const displayDate = () => {
   const currentDate = new Date()
 
-  document.getElementById("display-element").innerHTML = currentDate;
+document.getElementById("display-element").innerHTML = currentDate;
 }
- 
+
+const myName = "Ulysses"
+const userAge = 20
+const firstNum = 7
+const secondNum = 62
+const secondString = "9"
 
 // Write a JavaScript program to convert a number to a string.
-
-
+const numToString = (number) => {
+  return number.toString();
+}
 
 // Write a JavaScript program to convert a string to the number.
+const stringToNum = (string) => {
+  return parseInt(string);
+}
+
 
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
-  // * Boolean
-  // * Null
-  // * Undefined
-  // * Number
-  // * NaN
-  // * String
+//boolean
+let booleanVar = true;
+//null
+const nullVar = null;
+//undefined
+const undefinedVar = undefined;
+//NaN
+const myNan = -2 ;
+//string
+const myString = "stringy string"
+// your variable
+const myBool = false;
+
+const isTypeOf = (data) => {
+  return console.log(typeof data);
+}
+
+ 
   
 
   
 // Write a JavaScript program that adds 2 numbers together.
+const addTwoNumbers = (num1, num2) => {
+  return num1 + num2
+}
+
 
 
 
 // Write a JavaScript program that runs only when 2 things are true.
+const truthyValue = true;
+const secondTruthy = 69;
+const falsyValue = false;
+const secondFalsy = "";
 
+const bothAreTrue = (v1, v2) => {
+  if (v1 && v2) {
+    return "Both are true";
+  }
+}
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
+const eitherOrIsTrue = (v1, v2) => {
+  if (v1 || v2) {
+    return "One of them is true";
+  }
+}
 
 
 
 // Write a JavaScript program that runs when both things are not true.  
-
+const bothFalsey = (v1, v2) => {
+  if (!v1 && !v2) {
+    return "neither are true";
+  }
+}
 // ***************************
 //         PART TWO
 // ***************************

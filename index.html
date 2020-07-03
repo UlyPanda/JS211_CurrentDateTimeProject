@@ -7,9 +7,27 @@
   </head>
   <body>
     <h1>Hello World!</h1>
-    <hr/>
+    <form>
+
     <div id="display-element"></div>
     <button onclick="displayDate()">Click Me</button>
-    <hr/>
+    <label for ="stringtonum">String to number</label><br>
+    <input type="text" id="stringtonum" name="stringtonum"><br>
+    <button onclick="stringToNum(stringtonum)">Convert to number!</button>
+    <p id ="to-string"></p>
+    <button onclick="numToString()">Convert to string!</button>
+    <p id ="type-of"></p>
+    <input>
+    <button onclick="isTypeOf()">Type of!</button>
+    <input>
+    <button onclick="addTwoNumbers()">Sum!</button>
+    <input>
+    <button onclick="bothAreTrue()">Compare!</button>
+    <input>
+    <button onclick="eitherOrIsTrue()">Compare!</button>
+    <input>
+    <button onclick="bothFalsey()">Compare!</button>
+
+    </form>
   </body>
 </html>
